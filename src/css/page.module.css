@@ -20,6 +20,8 @@
 
 .RightSideBox {
   flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
 }
 
 .Box {
@@ -99,6 +101,59 @@
   opacity: .65;
 
   animation: skeleton-gradient 1.8s infinite ease-in-out;
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.HeaderTitleHolder {
+  width: 40%;
+  display: flex;
+}
+
+.HeaderTitle {
+  width: 85%;
+  margin: auto auto 0 auto;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.HeaderTitle::after {
+  content: "";
+  display: block;
+  width: 10%;
+  border: 2px solid #276DF1;
+  border-radius: 3px;
+}
+
+.HeaderNav {
+  width: 60%;
+  background-color: #2D2D2D;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.NavLi {
+  padding: 20px;
+  font-weight: bold;
+}
+
+.NavLi:hover {
+  color: #276DF1;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.NavActive {
+  border-bottom: 5px solid #276DF1;
+  transition: all 200ms ease-in;
+  padding-bottom: 15px;
 }
 
 /* Enable hover only on non-touch devices */
