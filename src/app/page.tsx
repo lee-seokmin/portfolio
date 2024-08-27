@@ -1,95 +1,59 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
+
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className={styles.wrap}>
+      <div className={`${styles.LeftSideBox} ${styles.Box}`}>
+        <div className={styles.LeftSideBoxWrap}>
+          <div className={styles.Profile}>
+            <div className={styles.ProfileImgHolder}>
+              
+            </div>
+            <div className={styles.ProfileNameHolder}>
+              
+            </div>
+          </div>
+          <div className={styles.ProfileInfo}>
+            <div className={`${styles.EmailBox} ${styles.InfoBox}`}>
+              <div className={styles.IconHolder}>
+                <FontAwesomeIcon icon={faEnvelope} size="xl" />
+              </div>
+              <div className={styles.InfoDetail}>
+                <span className={styles.InfoName}>EMAIL</span>
+                <span className={styles.Info}></span>
+              </div>
+            </div>
+
+            <div className={`${styles.GithubBox} ${styles.InfoBox}`}>
+              <div className={styles.IconHolder}>
+                <FontAwesomeIcon icon={faGithub} size="xl" />
+              </div>
+              <div className={styles.InfoDetail}>
+                <span className={styles.InfoName}>GITHUB</span>
+                <span className={styles.Info}></span>
+              </div>
+            </div>
+
+            <div className={`${styles.PhoneBox} ${styles.InfoBox}`}>
+              <div className={styles.IconHolder}>
+                <FontAwesomeIcon icon={faInstagram} size="xl" />
+              </div>
+              <div className={styles.InfoDetail}>
+                <span className={styles.InfoName}>INSTAGRAM</span>
+                <span className={styles.Info}></span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <div className={`${styles.RightSideBox} ${styles.Box}`}>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
