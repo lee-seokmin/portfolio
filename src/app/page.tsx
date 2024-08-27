@@ -8,18 +8,21 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 
+import Project from "./project";
+
 export default function Home() {
   const [Screen, SetScreen] = useState("About");
+  const [IsSkeleton, SetIsSkeleton] = useState(false);
 
   return (
     <div className={styles.wrap}>
       <div className={`${styles.LeftSideBox} ${styles.Box}`}>
         <div className={styles.LeftSideBoxWrap}>
           <div className={styles.Profile}>
-            <div className={styles.ProfileImgHolder}>
+            <div className={`${styles.ProfileImgHolder} ${IsSkeleton ? styles.SkeletonActive : ""}`}>
               
             </div>
-            <div className={styles.ProfileNameHolder}>
+            <div className={`${styles.ProfileNameHolder} ${IsSkeleton ? styles.SkeletonActive : ""}`}>
               
             </div>
           </div>
@@ -30,7 +33,7 @@ export default function Home() {
               </div>
               <div className={styles.InfoDetail}>
                 <span className={styles.InfoName}>EMAIL</span>
-                <span className={styles.Info}></span>
+                <span className={`${styles.Info} ${IsSkeleton ? styles.SkeletonActive : ""}`}></span>
               </div>
             </div>
 
@@ -40,7 +43,7 @@ export default function Home() {
               </div>
               <div className={styles.InfoDetail}>
                 <span className={styles.InfoName}>GITHUB</span>
-                <span className={styles.Info}></span>
+                <span className={`${styles.Info} ${IsSkeleton ? styles.SkeletonActive : ""}`}></span>
               </div>
             </div>
 
@@ -50,7 +53,7 @@ export default function Home() {
               </div>
               <div className={styles.InfoDetail}>
                 <span className={styles.InfoName}>INSTAGRAM</span>
-                <span className={styles.Info}></span>
+                <span className={`${styles.Info} ${IsSkeleton ? styles.SkeletonActive : ""}`}></span>
               </div>
             </div>
           </div>
@@ -64,23 +67,23 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.HeaderNav}>
-            <li className={`${styles.NavLi} ${Screen == "About" ? styles.NavActive: styles.NavDisabled}`} onClick={() => SetScreen("About")}>
+            <li className={`${styles.NavLi} ${Screen == "About" ? styles.NavActive: ""}`} onClick={() => SetScreen("About")}>
               About
             </li>
-            <li className={`${styles.NavLi} ${Screen == "Resume" ? styles.NavActive: styles.NavDisabled}`} onClick={() => SetScreen("Resume")}>
+            <li className={`${styles.NavLi} ${Screen == "Resume" ? styles.NavActive: ""}`} onClick={() => SetScreen("Resume")}>
               Resume
             </li>
-            <li className={`${styles.NavLi} ${Screen == "Project" ? styles.NavActive: styles.NavDisabled}`} onClick={() => SetScreen("Project")}>
+            <li className={`${styles.NavLi} ${Screen == "Project" ? styles.NavActive: ""}`} onClick={() => SetScreen("Project")}>
               Project
             </li>
-            <li className={`${styles.NavLi} ${Screen == "Contact" ? styles.NavActive: styles.NavDisabled}`} onClick={() => SetScreen("Contact")}>
+            <li className={`${styles.NavLi} ${Screen == "Contact" ? styles.NavActive: ""}`} onClick={() => SetScreen("Contact")}>
               Contact
             </li>
           </div>
         </div>
 
         <div className={styles.Body}>
-          
+          <Project IsSkeleton={IsSkeleton} />
         </div>
       </div>
     </div>

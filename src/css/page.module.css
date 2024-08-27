@@ -22,6 +22,7 @@
   flex-basis: 80%;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .Box {
@@ -41,12 +42,9 @@
 
 .ProfileImgHolder {
   aspect-ratio: 1;
-  background-color: #C2CBD8;
   width: 80%;
   margin: auto;
-  border-radius: 25px;
-  
-  animation: skeleton-gradient 1.8s infinite ease-in-out;
+  border-radius: 15px;
 }
 
 .ProfileNameHolder {
@@ -54,8 +52,6 @@
   height: 1.5rem;
   margin: auto;
   border-radius: 7px;
-
-  animation: skeleton-gradient 1.8s infinite ease-in-out;
 }
 
 .ProfileInfo {
@@ -78,10 +74,6 @@
   opacity: .3;
 }
 
-.EmailBox {
-
-}
-
 .IconHolder {
   padding: 10px;
 }
@@ -99,14 +91,13 @@
   height: 1rem;
   border-radius: 5px;
   opacity: .65;
-
-  animation: skeleton-gradient 1.8s infinite ease-in-out;
 }
 
 .Header {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 95%;
+  align-self: flex-end;
 }
 
 .HeaderTitleHolder {
@@ -115,18 +106,9 @@
 }
 
 .HeaderTitle {
-  width: 85%;
-  margin: auto auto 0 auto;
+  margin: auto auto 0 0;
   font-size: x-large;
   font-weight: bold;
-}
-
-.HeaderTitle::after {
-  content: "";
-  display: block;
-  width: 10%;
-  border: 2px solid #276DF1;
-  border-radius: 3px;
 }
 
 .HeaderNav {
@@ -154,6 +136,15 @@
   border-bottom: 5px solid #276DF1;
   transition: all 200ms ease-in;
   padding-bottom: 15px;
+}
+
+.Body {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.SkeletonActive {
+  animation: skeleton-gradient 1.8s infinite ease-in-out;
 }
 
 /* Enable hover only on non-touch devices */
