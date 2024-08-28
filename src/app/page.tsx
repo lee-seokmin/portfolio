@@ -9,6 +9,7 @@ import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 
 import Project from "./project";
+import About from "./about";
 
 export default function Home() {
   const [Screen, SetScreen] = useState("About");
@@ -20,10 +21,17 @@ export default function Home() {
         <div className={styles.LeftSideBoxWrap}>
           <div className={styles.Profile}>
             <div className={`${styles.ProfileImgHolder} ${IsSkeleton ? styles.SkeletonActive : ""}`}>
-              
+              <Image
+                src={'/profile.jpg'}
+                alt=""
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                style={{objectFit:"cover"}}
+              />
             </div>
-            <div className={`${styles.ProfileNameHolder} ${IsSkeleton ? styles.SkeletonActive : ""}`}>
-              
+            <div className={styles.ProfileNameHolder}>
+              <span className={styles.ProfileName}>이석민</span>
+              <span className={styles.ProfileEnName}>LEE SEOK MIN</span>
             </div>
           </div>
           <div className={styles.ProfileInfo}>
@@ -33,7 +41,11 @@ export default function Home() {
               </div>
               <div className={styles.InfoDetail}>
                 <span className={styles.InfoName}>EMAIL</span>
-                <span className={`${styles.Info} ${IsSkeleton ? styles.SkeletonActive : ""}`}></span>
+                <span className={`${styles.Info} ${IsSkeleton ? styles.SkeletonActive : ""}`}>
+                  {
+                    IsSkeleton ? "" : "dltjrals13@naver.com"
+                  }
+                </span>
               </div>
             </div>
 
@@ -43,7 +55,14 @@ export default function Home() {
               </div>
               <div className={styles.InfoDetail}>
                 <span className={styles.InfoName}>GITHUB</span>
-                <span className={`${styles.Info} ${IsSkeleton ? styles.SkeletonActive : ""}`}></span>
+                <span className={`${styles.Info} ${IsSkeleton ? styles.SkeletonActive : ""}`}>
+                  {
+                    IsSkeleton ? "" : 
+                    <a href="https://github.com/seokmin12" target="_blank">
+                      @seokmin12
+                    </a>
+                  }
+                </span>
               </div>
             </div>
 
@@ -53,7 +72,14 @@ export default function Home() {
               </div>
               <div className={styles.InfoDetail}>
                 <span className={styles.InfoName}>INSTAGRAM</span>
-                <span className={`${styles.Info} ${IsSkeleton ? styles.SkeletonActive : ""}`}></span>
+                <span className={`${styles.Info} ${IsSkeleton ? styles.SkeletonActive : ""}`}>
+                  {
+                    IsSkeleton ? "" : 
+                    <a href="https://instagram.com/lee_seokmin__/" target="_blank">
+                      @lee_seokmin__
+                    </a>
+                  }
+                </span>
               </div>
             </div>
           </div>
@@ -83,7 +109,18 @@ export default function Home() {
         </div>
 
         <div className={styles.Body}>
-          <Project IsSkeleton={IsSkeleton} />
+          {
+            Screen == "About" ? 
+              <About /> 
+              :
+              ""
+          }
+          {
+            Screen == "Project" ?
+              <Project IsSkeleton={IsSkeleton} />
+            :
+            ""
+          }
         </div>
       </div>
     </div>

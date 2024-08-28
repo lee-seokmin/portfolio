@@ -11,7 +11,7 @@
     content: "";
     display: block;
     width: 5%;
-    border: 2px solid #276DF1;
+    border: 2px solid var(--point-color);
     border-radius: 3px;
 }
 
@@ -25,8 +25,13 @@
     border-radius: 5px;
 }
 
+.CategoryActive {
+    color: var(--point-color);
+}
+
 .CategoryLi:hover {
     background-color: rgba(45, 45, 45, .7);
+    cursor: pointer;
 }
 
 .Body {
@@ -34,7 +39,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 10px;
+    row-gap: 20px;
     column-gap: 10px;
     overflow-y: auto;
     margin-bottom: 20px;
@@ -44,7 +49,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    aspect-ratio: 1;
     gap: 10px;
 }
 
@@ -61,7 +65,9 @@
 }
 
 .CardImgHolder::before {
-    content: "View More";
+    content: attr(title);
+    font-size: x-large;
+    font-weight: bold;
     position: absolute;
     width: 100%;
     height: 100%;

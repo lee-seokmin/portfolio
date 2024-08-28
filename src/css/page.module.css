@@ -45,13 +45,24 @@
   width: 80%;
   margin: auto;
   border-radius: 15px;
+  overflow: hidden;
+  position: relative;
 }
 
 .ProfileNameHolder {
-  width: 40%;
-  height: 1.5rem;
   margin: auto;
-  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.ProfileName {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.ProfileEnName {
+  opacity: .3;
 }
 
 .ProfileInfo {
@@ -127,13 +138,13 @@
 }
 
 .NavLi:hover {
-  color: #276DF1;
+  color: var(--point-color);
   cursor: pointer;
   transition: all .3s ease;
 }
 
 .NavActive {
-  border-bottom: 5px solid #276DF1;
+  border-bottom: 5px solid var(--point-color);
   transition: all 200ms ease-in;
   padding-bottom: 15px;
 }

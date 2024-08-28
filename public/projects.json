@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "ProjectName": "PhotoFrame",
+        "Category": "Web development",
+        "Image": "/ProjectImg/photoframe.png",
+        "URL": "https://github.com/seokmin12/PhotoFrame",
+        "State": "View More"
+    },
+    {
+        "id": 2,
+        "ProjectName": "DownBit",
+        "Category":"Web development",
+        "Image": "/ProjectImg/downbit.png",
+        "URL": "https://github.com/seokmin12/DownBit",
+        "State": "View More"
+    },
+    {
+        "id": 3,
+        "ProjectName": "Nature Language",
+        "Category": "AI",
+        "Image": "/ProjectImg/nlp.png",
+        "URL": "https://github.com/seokmin12/nature_language",
+        "State": "View More"
+    },
+    {
+        "id": 4,
+        "ProjectName": "NewsGeneration",
+        "Category": "AI",
+        "Image": "/ProjectImg/newsgeneration.png",
+        "URL": "https://github.com/seokmin12/NewsGeneration",
+        "State": "View More"
+    },
+    {
+        "id": 5,
+        "ProjectName": "지금 뭐 먹지?",
+        "Category": "Application",
+        "Image": "/ProjectImg/deliverydecision.png",
+        "URL": "https://github.com/seokmin12/DeliveryDecision",
+        "State": "View More"
+    },
+    {
+        "id": 6,
+        "ProjectName": "모작교",
+        "Category": "Application",
+        "Image": "/ProjectImg/mojakgyo.png",
+        "URL": "javascript:void(0)",
+        "State": "Comming Soon"
+    },
+    {
+        "id": 7,
+        "ProjectName": "API 사이트",
+        "Category": "Web development",
+        "Image": "/ProjectImg/api_site.png",
+        "URL": "https://github.com/seokmin12/API-site",
+        "State": "View More"
+    },
+    {
+        "id": 8,
+        "ProjectName": "헤어스타일 테스트",
+        "Category": "Web development",
+        "Image": "/ProjectImg/hairstyle.png",
+        "URL": "https://github.com/seokmin12/hairstyle_ai",
+        "State": "View More"
+    },
+    {
+        "id": 9,
+        "ProjectName": "주식 강화학습 트레이딩 봇",
+        "Category": "AI",
+        "Image": "/ProjectImg/tradingbot.png",
+        "URL": "javascript:void(0)",
+        "State": "Comming Soon"
+    }
+]
