@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "SkillColor": "#f4df4f",
+        "SkillName": "JavaScript",
+        "SkillIcon": "JavaScriptIcon"
+    },
+    {
+        "id": 2,
+        "SkillColor": "#376B9A",
+        "SkillName": "Python",
+        "SkillIcon": "PythonIcon"
+    },
+    {
+        "id": 3,
+        "SkillColor": "#5FD3F3",
+        "SkillName": "React",
+        "SkillIcon": "ReactIcon"
+    },
+    {
+        "id": 4,
+        "SkillColor": "#94C94A",
+        "SkillName": "Node.js",
+        "SkillIcon": "NodeJsIcon"
+    },
+    {
+        "id": 5,
+        "SkillColor": "#F65429",
+        "SkillName": "SwiftUI",
+        "SkillIcon": "SwiftUIIcon"
+    },
+    {
+        "id": 6,
+        "SkillColor": "#2F74C0",
+        "SkillName": "TypeScript",
+        "SkillIcon": "TypeScriptIcon"
+    },
+    {
+        "id": 7,
+        "SkillColor": "#5A839B",
+        "SkillName": "MySQL",
+        "SkillIcon": "MySQLIcon"
+    },
+    {
+        "id": 8,
+        "SkillColor": "#000000",
+        "SkillName": "Next Js",
+        "SkillIcon": "NextJsIcon"
+    }
+]

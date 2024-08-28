@@ -21,13 +21,17 @@ export default function Home() {
         <div className={styles.LeftSideBoxWrap}>
           <div className={styles.Profile}>
             <div className={`${styles.ProfileImgHolder} ${IsSkeleton ? styles.SkeletonActive : ""}`}>
-              <Image
-                src={'/profile.jpg'}
-                alt=""
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                style={{objectFit:"cover"}}
-              />
+              {
+                IsSkeleton ? ""
+                :
+                <Image
+                  src={'/profile.jpg'}
+                  alt=""
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{objectFit:"cover"}}
+                />
+              }
             </div>
             <div className={styles.ProfileNameHolder}>
               <span className={styles.ProfileName}>이석민</span>
