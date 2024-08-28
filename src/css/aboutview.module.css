@@ -4,6 +4,14 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.Container {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 

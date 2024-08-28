@@ -7,14 +7,6 @@
     gap: 10px;
 }
 
-.wrap::before {
-    content: "";
-    display: block;
-    width: 5%;
-    border: 2px solid var(--point-color);
-    border-radius: 3px;
-}
-
 .Category {
     display: flex;
     flex-direction: row;

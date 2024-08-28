@@ -10,6 +10,7 @@ import { useState } from "react";
 
 import Project from "./project";
 import About from "./about";
+import Resume from "./resume";
 
 export default function Home() {
   const [Screen, SetScreen] = useState("About");
@@ -118,6 +119,12 @@ export default function Home() {
               <About /> 
               :
               ""
+          }
+          {
+            Screen == "Resume" ?
+            <Resume />
+            :
+            ""
           }
           {
             Screen == "Project" ?

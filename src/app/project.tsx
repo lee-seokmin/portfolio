@@ -1,50 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { JSX, useState } from "react";
+import { useState } from "react";
 import styles from "../css/projectview.module.css";
-import Projects from "../../public/projects.json";
-
-const CardRendering = (IsSkeleton: boolean, Category: string) => {
-    const result: JSX.Element[] = [];
-
-    Projects.map((data, index) => {
-        if(data['Category'] == Category || Category == "All") {
-            result.push(
-                <div className={styles.Card}>
-                    <a href={data['URL']}>
-                        <div className={`${styles.CardImgHolder} ${IsSkeleton ? styles.SkeletonActive : ""}`} title={data['State']}>
-                            {
-                                IsSkeleton == false ? (
-                                    <Image src={data['Image']} 
-                                        layout='fill'
-                                        objectFit='cover'
-                                        alt={""}
-                                        className={styles.CardImg} 
-                                    />
-                                ) : ""
-                            }
-                        </div>
-                    </a>
-                    <div className={styles.CardInfo}>
-                        <span className={`${styles.CardTitle} ${IsSkeleton ? styles.SkeletonActive : ""}`}>
-                            {
-                                IsSkeleton == false ? data['ProjectName'] : ""
-                            }
-                        </span>
-                        <span className={`${styles.CardCategory} ${IsSkeleton ? styles.SkeletonActive : ""}`}>
-                            {
-                                IsSkeleton == false ? data['Category'] : ""
-                            }
-                        </span>
-                    </div>
-                </div>
-            )
-        }
-    })
-    
-    return result;
-}
+import CardRendering from "./components/ProjectCard";
 
 export default function Project({ IsSkeleton }: {IsSkeleton: boolean}) {
     const [Category, SetCategory] = useState("All");
@@ -66,7 +25,9 @@ export default function Project({ IsSkeleton }: {IsSkeleton: boolean}) {
                 </li>
             </div>
             <div className={styles.Body}>
-                {CardRendering(IsSkeleton, Category)}
+                {
+                    CardRendering(IsSkeleton, Category)
+                }
             </div>
         </div>
     );
