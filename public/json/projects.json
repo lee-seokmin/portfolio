@@ -70,5 +70,13 @@
         "Image": "/ProjectImg/tradingbot.png",
         "URL": "javascript:void(0)",
         "State": "Comming Soon"
+    },
+    {
+        "id": 10,
+        "ProjectName": "YOLO 포즈 아이돌 안무 연습",
+        "Category": "Application",
+        "Image": "/ProjectImg/yolopose.png",
+        "URL": "javascript:void(0)",
+        "State":"Comming Soon"
     }
 ]

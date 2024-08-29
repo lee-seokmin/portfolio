@@ -17,7 +17,7 @@ export default function Home() {
   const [IsSkeleton, SetIsSkeleton] = useState(true);
 
   useEffect(() => {
-    let skeletonTimer = setTimeout(()=>{ SetIsSkeleton(false) }, 2000);
+    setTimeout(()=>{ SetIsSkeleton(false) }, 2000);
   })
 
   return (
