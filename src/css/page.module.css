@@ -144,7 +144,7 @@
 }
 
 .NavLi {
-  padding: 20px;
+  padding: 1rem !important;
   font-weight: bold;
 }
 
@@ -157,7 +157,7 @@
 .NavActive {
   border-bottom: 5px solid var(--point-color);
   transition: all 200ms ease-in;
-  padding-bottom: 15px;
+  padding-bottom: calc(1rem - 5px) !important;
 }
 
 .Body {

@@ -20,11 +20,24 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    width: 80%;
+    margin: auto;
 }
 
 .PointColor {
     color: var(--point-color);
+}
+
+.blink {
+    animation: blink 0.5s infinite;
+}
+  
+@keyframes blink {
+to {
+    opacity: 0;
+}
 }
 
 .SkillContainer {

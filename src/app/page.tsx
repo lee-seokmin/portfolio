@@ -107,9 +107,6 @@ export default function Home() {
             <li className={`${styles.NavLi} ${Screen == "Project" ? styles.NavActive: ""}`} onClick={() => SetScreen("Project")}>
               Project
             </li>
-            <li className={`${styles.NavLi} ${Screen == "Contact" ? styles.NavActive: ""}`} onClick={() => SetScreen("Contact")}>
-              Contact
-            </li>
           </div>
         </div>
 
