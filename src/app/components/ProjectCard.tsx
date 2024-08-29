@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import Link from "next/link";
 import styles from "../../css/projectview.module.css";
 import Projects from "../../../public/json/projects.json";
 
@@ -10,7 +11,7 @@ export default function CardRendering(IsSkeleton: boolean, Category: string) {
         if(data['Category'] == Category || Category == "All") {
             result.push(
                 <div className={styles.Card}>
-                    <a href={data['URL']}>
+                    <Link href={data['URL']} target={data['State'] == "View More" ? "_blank" : ""}>
                         <div className={`${styles.CardImgHolder} ${IsSkeleton ? styles.SkeletonActive : ""}`} title={data['State']}>
                             {
                                 IsSkeleton == false ? (
@@ -23,7 +24,7 @@ export default function CardRendering(IsSkeleton: boolean, Category: string) {
                                 ) : ""
                             }
                         </div>
-                    </a>
+                    </Link>
                     <div className={styles.CardInfo}>
                         <span className={`${styles.CardTitle} ${IsSkeleton ? styles.SkeletonActive : ""}`}>
                             {
