@@ -1,6 +1,6 @@
 import styles from "../../css/resumeview.module.css";
 
-import Certifications from "../../../public/json/Certifications.json";
+import Certifications from "../../../public/json/certifications.json";
 
 export default function CertificationRendering() {
     const result: JSX.Element[] = [];
