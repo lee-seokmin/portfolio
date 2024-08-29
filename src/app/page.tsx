@@ -6,7 +6,7 @@ import styles from "../css/page.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Project from "./project";
 import About from "./about";
@@ -14,7 +14,11 @@ import Resume from "./resume";
 
 export default function Home() {
   const [Screen, SetScreen] = useState("About");
-  const [IsSkeleton, SetIsSkeleton] = useState(false);
+  const [IsSkeleton, SetIsSkeleton] = useState(true);
+
+  useEffect(() => {
+    let skeletonTimer = setTimeout(()=>{ SetIsSkeleton(false) }, 2000);
+  })
 
   return (
     <div className={styles.wrap}>
