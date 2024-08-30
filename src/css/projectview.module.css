@@ -58,7 +58,7 @@
 
 .CardImgHolder::before {
     content: attr(title);
-    font-size: x-large;
+    font-size: 2vw;
     font-weight: bold;
     position: absolute;
     width: 100%;
