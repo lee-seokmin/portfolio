@@ -14,8 +14,8 @@ export default function Project({ IsSkeleton }: {IsSkeleton: boolean}) {
                 <li className={`${styles.CategoryLi} ${Category == "All" ? styles.CategoryActive : ""}`} onClick={() => SetCategory("All")}>
                     All
                 </li>
-                <li className={`${styles.CategoryLi} ${Category == "Web development" ? styles.CategoryActive : ""}`} onClick={() => SetCategory("Web development")}>
-                    Web development
+                <li className={`${styles.CategoryLi} ${Category == "Website" ? styles.CategoryActive : ""}`} onClick={() => SetCategory("Website")}>
+                    Website
                 </li>
                 <li className={`${styles.CategoryLi} ${Category == "Application" ? styles.CategoryActive : ""}`} onClick={() => SetCategory("Application")}>
                     Application

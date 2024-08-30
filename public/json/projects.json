@@ -2,7 +2,7 @@
     {
         "id": 1,
         "ProjectName": "PhotoFrame",
-        "Category": "Web development",
+        "Category": "Website",
         "Image": "/ProjectImg/photoframe.png",
         "URL": "https://github.com/seokmin12/PhotoFrame",
         "State": "View More"
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "ProjectName": "DownBit",
-        "Category":"Web development",
+        "Category":"Website",
         "Image": "/ProjectImg/downbit.png",
         "URL": "https://github.com/seokmin12/DownBit",
         "State": "View More"
@@ -50,7 +50,7 @@
     {
         "id": 7,
         "ProjectName": "API 사이트",
-        "Category": "Web development",
+        "Category": "Website",
         "Image": "/ProjectImg/api_site.png",
         "URL": "https://github.com/seokmin12/API-site",
         "State": "View More"
@@ -58,14 +58,14 @@
     {
         "id": 8,
         "ProjectName": "헤어스타일 테스트",
-        "Category": "Web development",
+        "Category": "Website",
         "Image": "/ProjectImg/hairstyle.png",
         "URL": "https://github.com/seokmin12/hairstyle_ai",
         "State": "View More"
     },
     {
         "id": 9,
-        "ProjectName": "주식 강화학습 트레이딩 봇",
+        "ProjectName": "주식 트레이딩 봇",
         "Category": "AI",
         "Image": "/ProjectImg/tradingbot.png",
         "URL": "javascript:void(0)",
@@ -73,7 +73,7 @@
     },
     {
         "id": 10,
-        "ProjectName": "YOLO 포즈 아이돌 안무 연습",
+        "ProjectName": "댄시 (DANCI)",
         "Category": "Application",
         "Image": "/ProjectImg/yolopose.png",
         "URL": "javascript:void(0)",

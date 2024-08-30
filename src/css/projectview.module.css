@@ -89,12 +89,12 @@
 }
 
 .CardTitle {
-    height: 1rem;
+    height: 1.5vh;
     border-radius: 7px;
 }
 
 .CardCategory {
-    height: 1rem;
+    height: 1vh;
     border-radius: 7px;
     opacity: .3;
 }
@@ -117,5 +117,27 @@
     100% {
         background-color: rgba(194, 203, 216, 0.1);
     }
-  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .CategoryLi {
+        font-size: 3vw;
+    }
+
+    .Card {
+        font-size: 3vw;
+    }
+}
+
+/* Tablet */
+@media (min-width: 701px) and (max-width: 1120px) {
+    .CategoryLi {
+        font-size: 2vw;
+    }
+
+    .Card {
+        font-size: 2vw;
+    }
+}
   
