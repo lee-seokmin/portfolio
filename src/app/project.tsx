@@ -23,6 +23,9 @@ export default function Project({ IsSkeleton }: {IsSkeleton: boolean}) {
                 <li className={`${styles.CategoryLi} ${Category == "AI" ? styles.CategoryActive : ""}`} onClick={() => SetCategory("AI")}>
                     AI
                 </li>
+                <li className={`${styles.CategoryLi} ${Category == "System" ? styles.CategoryActive : ""}`} onClick={() => SetCategory("System")}>
+                    System
+                </li>
             </div>
             <div className={styles.Body}>
                 {

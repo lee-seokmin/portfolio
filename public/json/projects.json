@@ -44,8 +44,8 @@
         "ProjectName": "모작교",
         "Category": "Application",
         "Image": "/ProjectImg/mojakgyo.png",
-        "URL": "javascript:void(0)",
-        "State": "Comming Soon"
+        "URL": "https://github.com/seokmin12/MoJakGyo",
+        "State": "View More"
     },
     {
         "id": 7,
@@ -78,5 +78,13 @@
         "Image": "/ProjectImg/yolopose.png",
         "URL": "javascript:void(0)",
         "State":"Comming Soon"
+    },
+    {
+        "id": 11,
+        "ProjectName": "블록체인 기반 투표 시스템",
+        "Category": "System",
+        "Image": "/ProjectImg/votingsystem.png",
+        "URL": "https://github.com/seokmin12/BlockChainVotingSystem",
+        "State": "View More"
     }
 ]
