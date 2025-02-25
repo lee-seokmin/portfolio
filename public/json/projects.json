@@ -4,7 +4,7 @@
         "ProjectName": "PhotoFrame",
         "Category": "Website",
         "Image": "/ProjectImg/photoframe.png",
-        "URL": "https://github.com/seokmin12/PhotoFrame",
+        "URL": "https://github.com/lee-seokmin/PhotoFrame",
         "State": "View More"
     },
     {
@@ -12,7 +12,7 @@
         "ProjectName": "DownBit",
         "Category":"Website",
         "Image": "/ProjectImg/downbit.png",
-        "URL": "https://github.com/seokmin12/DownBit",
+        "URL": "https://github.com/lee-seokmin/DownBit",
         "State": "View More"
     },
     {
@@ -20,7 +20,7 @@
         "ProjectName": "Nature Language",
         "Category": "AI",
         "Image": "/ProjectImg/nlp.png",
-        "URL": "https://github.com/seokmin12/nature_language",
+        "URL": "https://github.com/lee-seokmin/nature_language",
         "State": "View More"
     },
     {
@@ -28,7 +28,7 @@
         "ProjectName": "NewsGeneration",
         "Category": "AI",
         "Image": "/ProjectImg/newsgeneration.png",
-        "URL": "https://github.com/seokmin12/NewsGeneration",
+        "URL": "https://github.com/lee-seokmin/NewsGeneration",
         "State": "View More"
     },
     {
@@ -36,7 +36,7 @@
         "ProjectName": "지금 뭐 먹지?",
         "Category": "Application",
         "Image": "/ProjectImg/deliverydecision.png",
-        "URL": "https://github.com/seokmin12/DeliveryDecision",
+        "URL": "https://github.com/lee-seokmin/DeliveryDecision",
         "State": "View More"
     },
     {
@@ -44,7 +44,7 @@
         "ProjectName": "모작교",
         "Category": "Application",
         "Image": "/ProjectImg/mojakgyo.png",
-        "URL": "https://github.com/seokmin12/MoJakGyo",
+        "URL": "https://github.com/lee-seokmin/MoJakGyo",
         "State": "View More"
     },
     {
@@ -52,7 +52,7 @@
         "ProjectName": "API 사이트",
         "Category": "Website",
         "Image": "/ProjectImg/api_site.png",
-        "URL": "https://github.com/seokmin12/API-site",
+        "URL": "https://github.com/lee-seokmin/API-site",
         "State": "View More"
     },
     {
@@ -60,7 +60,7 @@
         "ProjectName": "헤어스타일 테스트",
         "Category": "Website",
         "Image": "/ProjectImg/hairstyle.png",
-        "URL": "https://github.com/seokmin12/hairstyle_ai",
+        "URL": "https://github.com/lee-seokmin/hairstyle_ai",
         "State": "View More"
     },
     {
@@ -84,7 +84,15 @@
         "ProjectName": "블록체인 기반 투표 시스템",
         "Category": "System",
         "Image": "/ProjectImg/votingsystem.png",
-        "URL": "https://github.com/seokmin12/BlockChainVotingSystem",
+        "URL": "https://github.com/lee-seokmin/BlockChainVotingSystem",
+        "State": "View More"
+    },
+    {
+        "id": 12,
+        "ProjectName": "Virtual World",
+        "Category": "AI",
+        "Image": "/ProjectImg/virtualworld.png",
+        "URL": "https://github.com/lee-seokmin/VirtualWorld",
         "State": "View More"
     }
 ]
