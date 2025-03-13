@@ -22,7 +22,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/50" />
       </div>
-      
+
       <NavBar />
       <div className="relative z-10 h-screen snap-y snap-mandatory overflow-y-scroll">
         <MainSection />
