@@ -20,7 +20,7 @@ export default function About() {
       id="about"
       className="relative min-h-screen flex snap-start items-center justify-center px-6 sm:px-12 py-20 bg-gradient-to-b from-black/40 to-black/40 backdrop-blur-lg"
     >
-      <div className={`relative z-10 max-w-3xl w-full text-center text-white transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+      <div className={`relative z-10 max-w-3xl w-full text-center text-white transition-all duration-700 ${isVisible ? "animate-slide-in-right" : "opacity-0"}`}>
         <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full overflow-hidden shadow-xl border-4 border-white/20">
           <Image
             src="/image/profile.jpg"
