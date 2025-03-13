@@ -1,0 +1,115 @@
+.wrap {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+
+.Container {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.AboutmeHolder {
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    gap: 10px;
+}
+
+.PointColor {
+    color: var(--point-color);
+}
+
+.blink {
+    animation: blink 0.5s infinite;
+}
+  
+@keyframes blink {
+to {
+    opacity: 0;
+}
+}
+
+.SkillContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    gap: 20px;
+}
+
+.SkillBox {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.Skill {
+    font-size: 2rem;
+    margin: auto;
+    color: var(--point-color);
+}
+
+.SkillItem {
+    border: 1.7px solid var(--point-color) !important;
+    border-radius: 10px !important;
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, .137) !important;
+    font-size: 4.5em !important;
+    /* margin: 15px !important; */
+    opacity: .93 !important;
+    overflow: hidden !important;
+    padding: 10px !important;
+    text-align: center !important;
+    transition: all .4s ease 0s !important;
+    display: flex;
+    align-items: center;
+}
+
+.SkillItem:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .AboutmeHolder {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .SkillContainer {
+        width: 100%;
+    }
+
+    .Skill {
+        font-size: 7vw;
+    }
+
+    .SkillItem {
+        font-size: 7vw !important;
+    } 
+}
+
+/* Tablet */
+@media (min-width: 701px) and (max-width: 1120px) {
+    .AboutmeHolder {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .SkillContainer {
+        width: 100%;
+    }
+}

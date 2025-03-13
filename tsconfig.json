@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "target": "ES2017",
+=======
+>>>>>>> old-repo/main
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,

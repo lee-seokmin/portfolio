@@ -1,0 +1,130 @@
+.wrap {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.Profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.ProfileName {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.ProfileJob {
+    font-size: 1.4rem;
+    opacity: .3;
+}
+
+.Info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.InfoTitle {
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    padding: 5px;
+}
+
+.InfoName {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.InfoDate {
+    font-size: .8rem;
+    opacity: .3;
+}
+
+.School {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.Certification {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.TechStack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.Tech {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.TechType {
+    font-size: .9rem;
+    opacity: .7;
+}
+
+.Study {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.StudyName {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.StudyPeriod {
+    font-size: .8rem;
+    opacity: .3;
+}
+
+.StudyDescLi {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.StudyDesc {
+    font-size: .9rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .ProfileName {
+        font-size: 7vw;
+    }
+
+    .ProfileJob {
+        font-size: 6vw;
+    }
+}
+
+/* Tablet */
+@media (min-width: 701px) and (max-width: 1120px) {
+    .ProfileName {
+        font-size: 7vw;
+    }
+
+    .ProfileJob {
+        font-size: 6vw;
+    }
+}

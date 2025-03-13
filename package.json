@@ -3,12 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+<<<<<<< HEAD
     "dev": "next dev --turbopack",
+=======
+    "dev": "next dev",
+>>>>>>> old-repo/main
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "framer-motion": "^12.5.0",
     "next": "15.2.2",
     "react": "^19.0.0",
@@ -23,6 +28,26 @@
     "eslint": "^9",
     "eslint-config-next": "15.2.2",
     "tailwindcss": "^4",
+=======
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "hugeicons-react": "^0.3.0",
+    "next": "^14.2.7",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.3.0",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.6",
+>>>>>>> old-repo/main
     "typescript": "^5"
   }
 }

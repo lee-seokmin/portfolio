@@ -1,0 +1,314 @@
+.wrap {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 20px;
+  height: 90%;
+}
+
+.LeftSideBox {
+  flex-basis: 20%;
+}
+
+.LeftSideBoxWrap {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.RightSideBox {
+  flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Box {
+  padding: 10;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background: #212121;
+  box-shadow:  6px 6px 12px #1e1e1e,
+             -6px -6px 12px #242424;
+}
+
+.Profile {
+  height: 40%;
+  border-bottom: 2px solid rgba(255, 255, 255, .3);
+  display: flex;
+  flex-direction: column;
+}
+
+.ProfileImgHolder {
+  aspect-ratio: 1;
+  width: 80%;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.ProfileNameHolder {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+  font-size: 1.5em;
+}
+
+.ProfileName {
+  font-weight: bold;
+}
+
+.ProfileEnName {
+  opacity: .3;
+}
+
+.ProfileInfo {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.InfoBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  width: 100%;
+  flex-basis: auto;
+}
+
+.InfoName {
+  opacity: .3;
+}
+
+.IconHolder {
+  padding: 10px;
+}
+
+.InfoDetail {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 1.1em;
+  flex-grow: 1;
+  gap: 5px;
+  font-size: .9em;
+}
+
+.Info {
+  width: 100%;
+  height: 1rem;
+  border-radius: 5px;
+  opacity: .65;
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  align-self: flex-end;
+}
+
+.HeaderTitleHolder {
+  width: 40%;
+  display: flex;
+}
+
+.HeaderTitle {
+  margin: auto auto 0 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.HeaderTitle::after {
+  content: "";
+  display: block;
+  width: 40%;
+  border: 2px solid var(--point-color);
+  border-radius: 3px;
+}
+
+.HeaderNav {
+  width: 60%;
+  background-color: #2D2D2D;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.NavLi {
+  padding: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.NavLi:hover {
+  color: var(--point-color);
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.NavActive {
+  border-bottom: 5px solid var(--point-color);
+  transition: all 200ms ease-in;
+  padding-bottom: calc(1rem - 5px) !important;
+}
+
+.Body {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.SkeletonActive {
+  animation: skeleton-gradient 1.8s infinite ease-in-out;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+
+  .card:hover span {
+    transform: translateX(4px);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .card:hover span {
+    transform: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .wrap {
+    flex-direction: column;
+  }
+
+  .Box {
+    height: 0;
+  }
+
+  .LeftSideBoxWrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Profile {
+    height: auto;
+    border-bottom: 0;
+    gap: 10px;
+  }
+
+  .ProfileInfo {
+    height: auto;
+  }
+  
+  .ProfileName {
+    font-size: 3.5vw;
+  }
+
+  .ProfileEnName {
+    font-size: 3vw;
+  }
+
+  .InfoBox {
+    font-size: 2.5vw;
+    margin: auto;
+  }
+
+  .HeaderTitle {
+    font-size: 6vw;
+  }
+
+  .NavLi {
+    padding: 1.6vw;
+    font-size: 3vw;
+  }
+
+  .NavActive {
+    padding-bottom: calc(1.6vw - 5px) !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .wrap {
+    flex-direction: column;
+  }
+
+  .Box {
+    height: 0;
+  }
+
+  .LeftSideBoxWrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Profile {
+    height: auto;
+    border-bottom: 0;
+    gap: 10px;
+  }
+
+  .ProfileInfo {
+    height: auto;
+  }
+  
+  .ProfileName {
+    font-size: 2.5vw;
+  }
+
+  .ProfileEnName {
+    font-size: 2vw;
+  }
+
+  .InfoBox {
+    font-size: 1.5vw;
+  }
+
+  .HeaderTitle {
+    font-size: 1.6em;
+  }
+
+  .NavLi {
+    font-size: 1.5vw;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes skeleton-gradient {
+  0% {
+      background-color: rgba(194, 203, 216, 0.1);
+  }
+
+  50% {
+      background-color: rgba(194, 203, 216, 0.3);
+  }
+
+  100% {
+      background-color: rgba(194, 203, 216, 0.1);
+  }
+}
