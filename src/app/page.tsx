@@ -5,6 +5,7 @@ import NavBar from "@/layouts/Nav";
 import MainSection from "@/layouts/MainSection";
 import About from "@/layouts/About";
 import Resume from "@/layouts/Resume";
+import Projects from "@/layouts/Projects";
 
 export default function Home() {
   return (
@@ -35,14 +36,7 @@ export default function Home() {
         <Resume />
 
         {/* Projects Section */}
-        <section id="projects" className="h-screen flex flex-col justify-center items-center text-white px-6 snap-start bg-black/60 backdrop-blur-lg">
-          <h2 className="text-5xl font-bold mb-4">Projects</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="p-6 bg-gray-200/80 rounded-lg shadow-md">프로젝트 1</div>
-            <div className="p-6 bg-gray-200/80 rounded-lg shadow-md">프로젝트 2</div>
-            <div className="p-6 bg-gray-200/80 rounded-lg shadow-md">프로젝트 3</div>
-          </div>
-        </section>
+        <Projects />
 
 
         {/* Contact Section */}
