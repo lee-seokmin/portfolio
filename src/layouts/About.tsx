@@ -20,10 +20,7 @@ export default function About() {
       id="about"
       className="relative min-h-screen flex snap-start items-center justify-center px-6 sm:px-12 py-20 bg-gradient-to-b from-black/40 to-black/40 backdrop-blur-lg"
     >
-      
-      {/* Content Wrapper */}
       <div className={`relative z-10 max-w-3xl w-full text-center text-white transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-        {/* Profile Image */}
         <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full overflow-hidden shadow-xl border-4 border-white/20">
           <Image
             src="/image/profile.jpg"
@@ -35,7 +32,6 @@ export default function About() {
           />
         </div>
 
-        {/* Intro Text */}
         <h2 className="text-xl md:text-4xl font-extrabold mt-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-400">
           안녕하세요, 저는 풀스택 개발자입니다.
         </h2>
@@ -49,18 +45,6 @@ export default function About() {
           <p>
             오픈 소스 커뮤니티에 기여하며 함께 성장하는 개발 문화를 만들어가는 것을 목표로 합니다.
           </p>
-        </div>
-
-        {/* Skills */}
-        <div className="flex flex-wrap justify-center gap-3 mt-6">
-          {["Python", "React", "TypeScript", "Node.js", "Swift", "MySQL"].map((skill) => (
-            <span
-              key={skill}
-              className="px-4 py-2 bg-white/10 border border-white/20 rounded-full text-sm text-white font-medium hover:bg-white/20 transition"
-            >
-              {skill}
-            </span>
-          ))}
         </div>
       </div>
     </section>
